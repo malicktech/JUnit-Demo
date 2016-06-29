@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<dataset>
+  <TBLLOG ID='0' ip='192.168.1.10' duree='1000' parama='7' paramb='3' resultat='1' />
+</dataset>
