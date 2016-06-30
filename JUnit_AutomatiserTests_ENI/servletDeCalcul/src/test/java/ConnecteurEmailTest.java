@@ -1,3 +1,6 @@
+
+import static org.junit.Assert.*;
+
 import java.text.DateFormat;
 import java.text.SimpleDateFormat;
 import java.util.Date;
@@ -101,7 +104,7 @@ public class ConnecteurEmailTest {
             return null;
         }
         public void viderBoite() {
-            // Vide la boite de réception & d'envoi
+            // Vide la boite de r≈Ωception & d'envoi
         }
     }
 
@@ -131,12 +134,12 @@ public class ConnecteurEmailTest {
 
         envoi.envoyerEmail(email);
 
-        // Patiente 5s pour laisse le temps à l'email d'arriver
+        // Patiente 5s pour laisse le temps ÀÜ l'email d'arriver
         Thread.currentThread().sleep(5000);
         
         List<Email> liste = reception.recupereEmails();
 
-        // Charge utile de test vérifiant le dernier email reçu
+        // Charge utile de test v≈Ωrifiant le dernier email reÔøΩu
         assertEquals(email, liste.get(0));
 
         // Nettoyage des boites pour ne pas les saturer
