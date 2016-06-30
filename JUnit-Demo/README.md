@@ -30,7 +30,12 @@ gs1 : https://github.com/junit-team/junit4/wiki/'Enclosed'-test-runner-example
 ### demo 4
 
 	()[https://openclassrooms.com/courses/les-tests-unitaires-en-java]
-	
+
+
+### demo 5
+
+http://blog.xebia.fr/2013/02/19/craftsman-recipes-happy-hour-pour-vos-tests-avec-mockito/
+ 	
 ### STACK
 
 Spring boot

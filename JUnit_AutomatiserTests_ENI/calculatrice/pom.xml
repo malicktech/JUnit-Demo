@@ -1,54 +1,70 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
-  <modelVersion>4.0.0</modelVersion>
-  <groupId>com.agilidee.livrejunit</groupId>
-  <artifactId>calculator</artifactId>
-  <version>1.0</version>
-  <name>Calculatrice</name>
-  <packaging>jar</packaging>
-  <dependencies>
-    <dependency>
-      <groupId>junit</groupId>
-      <artifactId>junit</artifactId>
-      <version>4.12</version>
-      <scope>test</scope>
-    </dependency>
-	<dependency>
-	    <groupId>easymock</groupId>
-	    <artifactId>easymock</artifactId>
-	    <version>2.0</version>
-      <scope>test</scope>
-	</dependency>
-  </dependencies>
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>com.agilidee.livrejunit</groupId>
+	<artifactId>calculator</artifactId>
+	<version>1.0</version>
+	<name>Calculatrice</name>
+	<packaging>jar</packaging>
 
-  <build>
-    <finalName>Calculatrice</finalName>
-	<plugins>
-		<plugin>
-			<groupId>org.apache.maven.plugins</groupId>
-			<artifactId>maven-compiler-plugin</artifactId>
-			<configuration>
-				<source>1.8</source>
-				<target>1.8</target>
-				<optimize>true</optimize>
-			</configuration>
-		</plugin>
-        <plugin>
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>cobertura-maven-plugin</artifactId>
-        </plugin>
-        <plugin>      
-            <groupId>org.codehaus.mojo</groupId>
-            <artifactId>emma-maven-plugin</artifactId>
-            <inherited>true</inherited>      
-            <configuration>
-                <instrument>
-                    <tests>true</tests> 
-                </instrument>
-            </configuration>
-        </plugin>
-    </plugins>
-  </build>
+	<properties>
+		<junit.version>4.12</junit.version>
+		<mockito.version>1.10.19</mockito.version>
+	</properties>
+
+	<dependencies>
+
+		<dependency>
+			<groupId>junit</groupId>
+			<artifactId>junit</artifactId>
+			<version>${junit.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>easymock</groupId>
+			<artifactId>easymock</artifactId>
+			<version>2.0</version>
+			<scope>test</scope>
+		</dependency>
+
+		<dependency>
+			<groupId>org.mockito</groupId>
+			<artifactId>mockito-core</artifactId>
+			<version>${mockito.version}</version>
+			<scope>test</scope>
+		</dependency>
+
+	</dependencies>
+
+	<build>
+		<finalName>Calculatrice</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+					<optimize>true</optimize>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>cobertura-maven-plugin</artifactId>
+			</plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>emma-maven-plugin</artifactId>
+				<inherited>true</inherited>
+				<configuration>
+					<instrument>
+						<tests>true</tests>
+					</instrument>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
 
 	<reporting>
 		<plugins>
@@ -62,11 +78,11 @@
 					</formats>
 				</configuration>
 			</plugin>
-            <plugin>      
-                <groupId>org.codehaus.mojo</groupId>
-                <artifactId>emma-maven-plugin</artifactId>
-                <inherited>true</inherited>          
-            </plugin>
+			<plugin>
+				<groupId>org.codehaus.mojo</groupId>
+				<artifactId>emma-maven-plugin</artifactId>
+				<inherited>true</inherited>
+			</plugin>
 		</plugins>
 	</reporting>
 </project>
