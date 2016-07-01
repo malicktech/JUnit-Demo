@@ -3,7 +3,7 @@ package demo5.mockito;
 import java.math.BigDecimal;
 
 /**
- * @author <a href="mailto:clardeur@xebia.fr">Clement Lardeur</a>
+ * @author <a href="mailto:diop-malick@hotmail.fr">Malick</a>
  */
 public class Product {
 

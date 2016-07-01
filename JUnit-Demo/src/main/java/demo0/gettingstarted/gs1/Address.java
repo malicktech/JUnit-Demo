@@ -6,92 +6,104 @@ import com.google.common.collect.ComparisonChain;
 
 public class Address implements Serializable, Comparable<Address> {
 
-    private static final long serialVersionUID = 1L;
-    private final String address1;
-    private final String city;
-    private final String state;
-    private final String zip;
+	private static final long serialVersionUID = 1L;
+	private final String address1;
+	private final String city;
+	private final String state;
+	private final String zip;
 
-    private Address(Builder builder) {
-        this.address1 = builder.address1;
-        this.city = builder.city;
-        this.state = builder.state;
-        this.zip = builder.zip;
-    }
+	public Address() {
+		this.address1 = "85 Rue docteur frappaz";
+		this.city = "Paris";
+		this.state = "FRANCE";
+		this.zip = "00000";
+	}
 
-    public String getAddress1() {
-        return address1;
-    }
+	private Address(Builder builder) {
+		this.address1 = builder.address1;
+		this.city = builder.city;
+		this.state = builder.state;
+		this.zip = builder.zip;
+	}
 
-    public String getCity() {
-        return city;
-    }
+	public String getAddress1() {
+		return address1;
+	}
 
-    public String getState() {
-        return state;
-    }
+	public String getCity() {
+		return city;
+	}
 
-    public String getZip() {
-        return zip;
-    }
+	public String getState() {
+		return state;
+	}
 
-    @Override
-    public int compareTo(Address that) {
-        return ComparisonChain.start().compare(this.zip, that.zip).compare(this.state, that.state)
-                .compare(this.city, that.city).compare(this.address1, that.address1).result();
-    }
+	public String getZip() {
+		return zip;
+	}
 
-    @Override
-    public boolean equals(Object obj) {
-        if (obj == null) { return false; }
-        if (getClass() != obj.getClass()) { return false; }
-        final Address that = (Address) obj;
+	@Override
+	public int compareTo(Address that) {
+		return ComparisonChain.start().compare(this.zip, that.zip).compare(this.state, that.state)
+				.compare(this.city, that.city).compare(this.address1, that.address1).result();
+	}
 
-        return com.google.common.base.Objects.equal(this.address1, that.address1)
-                && com.google.common.base.Objects.equal(this.city, that.city)
-                && com.google.common.base.Objects.equal(this.state, that.state)
-                && com.google.common.base.Objects.equal(this.zip, that.zip);
-    }
+	@Override
+	public boolean equals(Object obj) {
+		if (obj == null) {
+			return false;
+		}
+		if (getClass() != obj.getClass()) {
+			return false;
+		}
+		final Address that = (Address) obj;
 
-    @Override
-    public int hashCode() {
-        return com.google.common.base.Objects.hashCode(getAddress1(), getCity(), getCity(), getState(), getZip());
-    }
+		return com.google.common.base.Objects.equal(this.address1, that.address1)
+				&& com.google.common.base.Objects.equal(this.city, that.city)
+				&& com.google.common.base.Objects.equal(this.state, that.state)
+				&& com.google.common.base.Objects.equal(this.zip, that.zip);
+	}
 
-    @Override
-    public String toString() {
-        return com.google.common.base.Objects.toStringHelper(this).addValue(getAddress1()).addValue(getCity()).addValue(getState()).addValue(getZip()).toString();
-    }
+	@Override
+	public int hashCode() {
+		return com.google.common.base.Objects.hashCode(getAddress1(), getCity(), getCity(), getState(), getZip());
+	}
 
-    public static class Builder {
+	@Override
+	public String toString() {
+		return com.google.common.base.Objects.toStringHelper(this).addValue(getAddress1()).addValue(getCity())
+				.addValue(getState()).addValue(getZip()).toString();
+	}
 
-        private String address1;
-        private String city;
-        private String state;
-        private String zip;
+	public static class Builder {
 
-        public Builder address1(String address1) {
-            this.address1 = address1;
-            return this;
-        }
+		private String address1;
+		private String city;
+		private String state;
+		private String zip;
 
-        public Address build() {
-            return new Address(this);
-        }
+		public Builder address1(String address1) {
+			this.address1 = address1;
+			return this;
+		}
 
-        public Builder city(String city) {
-            this.city = city;
-            return this;
-        }
+		public Address build() {
+			return new Address(this);
+		}
 
-        public Builder state(String state) {
-            this.state = state;
-            return this;
-        }
+		public Builder city(String city) {
+			this.city = city;
+			return this;
+		}
 
-        public Builder zip(String zip) {
-            this.zip = zip;
-            return this;
-        }
-    }
+		public Builder state(String state) {
+			this.state = state;
+			return this;
+		}
+
+		public Builder zip(String zip) {
+			this.zip = zip;
+			return this;
+		}
+	}
 }
