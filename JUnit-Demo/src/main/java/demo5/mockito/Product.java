@@ -2,12 +2,10 @@ package demo5.mockito;
 
 import java.math.BigDecimal;
 
-/**
- * @author <a href="mailto:diop-malick@hotmail.fr">Malick</a>
- */
+
 public class Product {
 
-    private final BigDecimal price;
+    private BigDecimal price;
 
     public Product(BigDecimal price) {
         this.price = price != null ? price : BigDecimal.ZERO;
@@ -16,4 +14,9 @@ public class Product {
     public BigDecimal getPrice() throws Exception {
         return price;
     }
+    
+    public void setPrice(BigDecimal price) throws Exception {
+        this.price = price != null ? price : BigDecimal.ZERO;
+    }
+    
 }

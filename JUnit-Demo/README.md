@@ -34,8 +34,16 @@ gs1 : https://github.com/junit-team/junit4/wiki/'Enclosed'-test-runner-example
 
 ### demo 5
 
-http://blog.xebia.fr/2013/02/19/craftsman-recipes-happy-hour-pour-vos-tests-avec-mockito/
- 	
+	(tuto from blog.xebia.fr)[http://blog.xebia.fr/2013/02/19/craftsman-recipes-happy-hour-pour-vos-tests-avec-mockito/]
+
+### demo 6
+
+	(tuto from blog.soat.fr)[http://blog.soat.fr/2013/07/mockito-ou-comment-faciliter-lecriture-de-tests-unitaires/]
+ 
+### demo 7 
+
+	(tuto from blog.netapsys.fr)[http://blog.netapsys.fr/mockito-spy-simuler-une-partie-de-vos-classes/]
+
 ### STACK
 
 Spring boot

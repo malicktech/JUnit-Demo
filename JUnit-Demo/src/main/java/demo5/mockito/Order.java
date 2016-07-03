@@ -8,9 +8,6 @@ import java.util.Locale;
 import static java.text.NumberFormat.getCurrencyInstance;
 import static org.apache.commons.lang.StringUtils.EMPTY;
 
-/**
- * @author <a href="mailto:clardeur@xebia.fr">Clement Lardeur</a>
- */
 public class Order {
 
     List<Product> products;
