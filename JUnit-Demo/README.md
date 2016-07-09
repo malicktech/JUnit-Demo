@@ -44,6 +44,12 @@ gs1 : https://github.com/junit-team/junit4/wiki/'Enclosed'-test-runner-example
 
 	(tuto from blog.netapsys.fr)[http://blog.netapsys.fr/mockito-spy-simuler-une-partie-de-vos-classes/]
 
+### demo 8
+
+inspired from book : Unit, mise en oeuvre pour automatiser les tests en Java, écrit par Benoît Ganthaume et publié aux éditions ENI.
+	
+	()[http://www.junit.fr/]
+
 ### STACK
 
 Spring boot
