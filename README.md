@@ -1,14 +1,47 @@
-# Demo0
-JUnit Test Demo
+# Unit Test Demo
+Set of demo tuto for experimental test of the features of the JUnit
+ 
+## demo 0 
 
-# Demo1
+getting started from junit Team 
 
-inspired from book : 
+	(gs0) [https://github.com/junit-team/junit4/wiki/Getting-started]
+	(gs1) [https://github.com/junit-team/junit4/wiki/'Enclosed'-test-runner-example]
 
-JUnit - Mise en oeuvre pour automatiser les tests en Java
-https://www.amazon.fr/JUnit-Mise-oeuvre-automatiser-tests/dp/2746060612
+### demo 1
 
-todo :
+	enclosed test example
+	https://github.com/junit-team/junit4/wiki/'Enclosed'-test-runner-example
+	
+### demo 2
 
-replace junitperf
-use annotation
+	(Java Contract TestHelpers
+	)[https://bitbucket.org/chas678/testhelpers]
+
+### demo 3
+
+	()[http://rpouiller.developpez.com/tutoriels/java/tests-unitaires-junit4/#LIII-D]
+
+### demo 4
+
+	()[https://openclassrooms.com/courses/les-tests-unitaires-en-java]
+
+
+### demo 5 : Mockito
+
+	(tuto from blog.xebia.fr)[http://blog.xebia.fr/2013/02/19/craftsman-recipes-happy-hour-pour-vos-tests-avec-mockito/]
+
+### demo 6 : Mockito
+
+	(tuto from blog.soat.fr)[http://blog.soat.fr/2013/07/mockito-ou-comment-faciliter-lecriture-de-tests-unitaires/]
+ 
+### demo 7 : Mockito
+
+	(tuto from blog.netapsys.fr)[http://blog.netapsys.fr/mockito-spy-simuler-une-partie-de-vos-classes/]
+
+### demo 8 : easyMock, DBUnit
+
+inspired from book : Unit, mise en oeuvre pour automatiser les tests en Java, écrit par Benoît Ganthaume et publié aux éditions ENI.
+	
+	()[http://www.junit.fr/]
+

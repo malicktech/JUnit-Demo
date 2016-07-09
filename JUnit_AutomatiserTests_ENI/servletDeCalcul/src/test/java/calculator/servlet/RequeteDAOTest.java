@@ -1,6 +1,6 @@
 package calculator.servlet;
 
-import junit.framework.Assert;
+import static org.junit.Assert.*;
 
 import org.dbunit.Assertion;
 import org.dbunit.DBTestCase;
@@ -67,7 +67,7 @@ public class RequeteDAOTest extends DBTestCase
 
     public void testLireRequetes() throws Exception {
         List<Requete> liste = dao.lireRequetes();
-        Assert.assertEquals(1, liste.size());
+        assertEquals(1, liste.size());
         Requete req = liste.get(0);
 
         assertTrue(req.getID().equals(0));
