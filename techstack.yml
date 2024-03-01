@@ -1,0 +1,43 @@
+repo_name: malicktech/JUnit-Demo
+report_id: '078f68f1860d072dec8a122be2c484dc'
+version: 0.1
+repo_type: Public
+timestamp: '2024-03-01T22:48:37+00:00'
+requested_by: malicktech
+provider: github
+branch: master
+detected_tools_count: 3
+tools:
+- name: Java
+  description: A concurrent, class-based, object-oriented, language specifically designed
+    to have as few implementation dependencies as possible
+  website_url: https://www.java.com
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/995/K85ZWV2F.png
+  detection_source_url: https://github.com/malicktech/JUnit-Demo
+  detection_source: Repo Metadata
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source_url: https://github.com/malicktech/JUnit-Demo
+  detection_source: Repo Metadata
+- name: Logback
+  description: A logging framework for Java applications
+  website_url: https://logback.qos.ch/
+  open_source: false
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/2923/05518ecaa42841e834421e9d6987b04f_400x400.png
+  detection_source_url: https://github.com/malicktech/JUnit-Demo/blob/master/JUnit-Demo/src/main/resources/logback.xml
+  detection_source: JUnit-Demo/src/main/resources/logback.xml
+  last_updated_by: Malick
+  last_updated_on: 2016-06-29 21:25:47.000000000 Z
